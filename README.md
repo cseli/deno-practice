@@ -35,6 +35,7 @@
 
 * Tests
 * Migrate to TypeScript
+* API doc (like SWAGGER)
 
 ## Source
  * [Creating your first REST API with Deno and Postgres](https://blog.logrocket.com/creating-your-first-rest-api-with-deno-and-postgres/)
