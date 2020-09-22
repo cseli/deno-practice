@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "60d0df75-2b68-40da-aea5-9c4e28a1f305",
+		"name": "blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Second blog post\",\n\t\"content\": \"blabla\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/blogPosts",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogPosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"First post\",\n\t\"content\": \"bla\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/blogPosts/5",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogPosts",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/blogPosts/4",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogPosts",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/blogPosts/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogPosts",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/blogPosts/4",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"blogPosts",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
