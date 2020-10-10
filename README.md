@@ -3,7 +3,7 @@
 ## Set up postgres db (locally via docker image)
 
 * Get docker image: `docker pull postgres`
-* Start image: `docker run -p 5432:5432 --name blog-postgres -d postgres`
+* Start image: `docker run --name blog-postgres -e POSTGRES_PASSWORD=[PASSWORD] -p 5432:5432 -d postgres`
 * Get docker container bash: `docker exec -it [CONTAINER_ID] /bin/bash`
 * Login to postgres server: `psql -U postgres`
 * Create user for app: `create user [USER] with encrypted password [PASSWORD];`
